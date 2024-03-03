@@ -113,7 +113,6 @@ margin-right: 10px;
 <body>
 <h2 class="container">Agent Registration </h2>
 <form action="{% url 'agent_signup' %}" method="POST" onsubmit="return validateForm()">
-    {% csrf_token %}
   <label for="username">Username:</label>
   <input type="text" class="text" id="username" name="username" required><br>
   <label for="gender">Gender</label>
